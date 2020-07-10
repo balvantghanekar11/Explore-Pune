@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="css/ProTrends.css">
+	<link rel="stylesheet" type="text/css" href="css/ProHeader.css">
+	
+	<style>
+.mySlides {display:none;}
+</style>
+</head>
+<body>
+
+	<!-- <div class="slider">
+		
+	</div> -->
+	<div class="Menu">
+  <a href="Index.html">Home</a>
+  <a href="ProTouristSpots.html">Tourist Spots</a>
+  <a href="ProEducational.php">Educational Institutes</a>
+  <a href="ProCommerce.html">Commercial Zones</a>
+  <a href="ProTrends.html">Trends And Development</a>
+  <a href="ProFoodCorner.html">Food Corners</a>
+  <a href="ProResidential.html">Residential Areas</a>
+</div>
+
+	<div class="head">
+		<h1>Pune Metro</h1>		
+	</div>
+	<div class="slider" style="margin-left: 0px; ">
+  		<img class="mySlides" src="img/st1.jpg" >
+  		<img class="mySlides" src="img/st2.jpg" >
+  		<img class="mySlides" src="img/st3.jpg" >
+  		<img class="mySlides" src="img/st4.jpg" >
+  		<img class="mySlides" src="img/st5.jpg" >
+  		<img class="mySlides" src="img/st6.jpg" >
+	</div>
+	
+	<center>
+	<h2 style="margin-top: 150px;">Photos</h2></center>
+	<div class="images" >
+		<a href="img/metro11.jpeg" target="_blank"><div class="image1"></div></a>
+		<a href="img/metro21.jpg" target="_blank"><div class="image2"></div></a>
+		<a href="img/metro13.jpeg" target="_blank"><div class="image3"></div></a>
+		<a href="img/metro14.jpg" target="_blank"><div class="image4"></div></a>
+		<a href="img/metro15.jpeg" target="_blank"><div class="image5"></div></a>
+		<a href="img/metro16.jpg" target="_blank"><div class="image6"></div></a>
+		<a href="img/metro20.jpg" target="_blank"><div class="image7"></div></a>
+		<a href="img/metro19.jpeg" target="_blank"><div class="image8"></div></a>
+	</div>
+	<center>
+	<h2 style="margin-top: 150px;">Videos</h2></center>
+	<div class="videos">
+		<video width="800" controls autoplay loop style="box-shadow: 0px 10px 18px black;">
+  			<source src="vid/v2.mp4" type="video/mp4" >
+  			
+  
+		</video>
+
+
+		
+	</div>
+	<div class="Allvideos">
+		<!-- <iframe width="400" height="300" src="https://www.youtube.com/embed/tgbNymZ7vqY?autoplay=1" box-shadow: 0px 10px 18px black;>
+		</iframe>
+			<iframe width="400" height="300" src="https://www.youtube.com/embed/tgbNymZ7vqY?autoplay=1" box-shadow: 0px 10px 18px black;>
+		</iframe>
+		<iframe width="400" height="300" src="https://www.youtube.com/embed/tgbNymZ7vqY?autoplay=1" box-shadow: 0px 10px 18px black;>
+		</iframe> -->
+	</div>
+	<br><br><br>
+	<div class="sec1">
+		<section class="section section-dark">
+			<h2>Other Important Link</h2><hr style="width: 500px;">
+			<img src="img/logo.png" class="logo">
+			<p><a href="" style="text-decoration: none;color: white;">Maharashtra Government</a></p><hr><br>
+			<p><a href="http://www.punemetrorail.org/" style="text-decoration: none;color: white;">Pune Metro</a></p><hr><br>
+		</section>
+	</div> 
+	
+				
+</body>
+</html>
+<script>
+		var myIndex = 0;
+		carousel();
+
+		function carousel() {
+		  var i;
+		  var x = document.getElementsByClassName("mySlides");
+		  for (i = 0; i < x.length; i++) {
+		    x[i].style.display = "none";  
+		  }
+		  myIndex++;
+		  if (myIndex > x.length) {myIndex = 1}    
+		  x[myIndex-1].style.display = "block";  
+		  setTimeout(carousel, 2000); // Change image every 2 seconds
+		}
+	</script>

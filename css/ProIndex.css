@@ -1,0 +1,157 @@
+body{
+	height: 100%;
+	margin: 0;
+	font-size: 16px;
+	font-family: "Lato",sans-serif;
+	font-weight: 400;
+	line-height: 1.8em;
+	color: #666;
+}
+
+.pimg1,.pimg2, .pimg3,.pimg4,.pimg5,.pimg6,.pimg7,.pimg8,.pimg9{
+	position: relative;
+	/*opacity: 0.70;*/
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: center;
+}
+
+.pimg1{
+	background-image: url('../img/lavasa3.jpg');
+	min-height: 700px;
+}
+
+.hh{
+	margin-top: 50px;
+}
+
+.pimg2{
+	background-image: url('../img/sh.jpg');
+	min-height: 600px;
+}
+
+.pimg3{
+	background-image: url('../img/mit.jpg');
+	min-height: 600px;
+}
+
+.pimg4{
+	background-image: url('../img/indu.jpg');
+	min-height: 600px;
+}
+
+.pimg5{
+	background-image: url('../img/marcket.jpg');
+	min-height: 600px;
+}
+
+.pimg6{
+	background-image: url('../img/ex.jpg');
+	min-height: 600px;
+}
+
+.pimg7{
+	background-image: url('../img/metro17.jpeg');
+	min-height: 600px;
+}
+
+.pimg8{
+	background-image: url('../img/f2.jpg');
+	min-height: 600px;
+}
+
+.pimg9{
+	background-image: url('../img/lavasa2.jpg');
+	min-height: 600px;
+}
+
+.section{
+	text-align: center;
+	padding: 50px 80px;
+}
+
+.section-light{
+	background-color: #f4f4f4;
+	color: #666;
+}
+
+.section-dark{
+	background-color: #282e34;
+	color: #ddd;
+}
+
+.ptxt{
+	position: absolute;
+	top: 50%;
+	width: 100%;
+	text-align: center;
+	color: #000;
+	font-size: 27px;
+	letter-spacing: 8px;
+	text-transform: uppercase;
+}
+
+.ptxt .border{
+	background-color: #111;
+	color: #fff;
+	padding: 20px;
+}
+
+.ptxt .border.trans{
+	background-color: transparent;
+	color: #fff;
+	text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+}
+
+.main-body{
+	width: 1180px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	/*border: 1px solid red;*/
+	color: white;
+	transform: translate(-50%,-50%);
+
+}
+
+.arr1:hover{
+	/*color: blue;
+	font-size: 30px;*/
+}
+
+h1{
+/*	color: #ff;*/
+	font-size: 240%;
+	word-spacing: 5px;
+	letter-spacing: 3px;
+	margin-bottom: 20px;
+	text-transform: uppercase;
+	font-weight: lighter;
+	text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+}
+
+.text{
+	text-align: center;
+	/*position: relative;*/
+	padding-top: 300px;
+	font-family: fantasy;
+	font-size: 35px;
+	color: white;
+	top: 50%;
+
+}
+
+.arr1{
+	font-size: 48px;
+	color: white;
+	float: right;
+	/*list-style: none;*/
+}
+
+.arr2{
+	font-size: 48px;
+	color: black;
+	float: right;
+	/*list-style: none;*/
+}

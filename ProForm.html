@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="css/ProForm.css">
+<link rel="stylesheet" type="text/css" href="css/ProHeader.css">
+</head>
+<body>
+  <div class="Menu">
+  <a href="Index.html">Home</a>
+  <a href="ProTouristSpots.html">Tourist Spots</a>
+  <a href="ProEducational.php">Educational Institutes</a>
+  <a href="ProCommerce.html">Commercial Zones</a>
+  <a href="ProTrends.html">Trends And Development</a>
+  <a href="ProFoodCorner.html">Food Corners</a>
+  <a href="ProResidential.html">Residential Areas</a>
+</div>
+
+<h1><center>Enter The Details</center></h1>
+<p><center>Please Enter Your Details And Let Us Help You With What You Are Looking For..</center></p>
+<script type="text/javascript">
+
+    function myval()
+    {
+      
+        var letters="/^[A-Za-z]*$/";// For validating Alphabets
+        var phone="/^\d{10}$/";     // For validating Contact No
+        var pas=document.getElementById('pwd'); // For validating Password
+        var confpas=document.getElementById('confpwd');//and confirm passsword
+        var eml="/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/";// For Validating Email
+        var pas1="/^[A-Za-z]\w{7,14}$/"
+
+        if(document.myform.firstname.value=="")
+        {
+          alert("Please Provide Your First Name");
+          document.myform.firstname.focus();
+          return false;
+        }
+        else if(document.myform.firstname.value!=letters)
+        {
+          alert("Please Provide Only Alphabets in Name");
+          document.myform.firstname.focus();
+          return false;
+        }
+        //----------------
+        if(document.myform.lastname.value=="")
+        {
+          alert("Please Provide Your Last Name");
+          document.myform.lastname.focus();
+          return false;
+        }
+        else if(document.myform.lastname.value!=letters)
+        {
+          alert("Please Provide Only Alphabets in Name");
+          document.myform.lastname.focus();
+          return false;
+        }
+        //-----------------
+        if(document.myform.qualification.value=="")
+        {
+          alert("Please Provide Your Qualification");
+          document.myform.qualification.focus();
+          return false;
+        }
+        //----------------
+        if(document.myform.percentage.value=="")
+        {
+          alert("Please Provide Your Percentage");
+          document.myform.percentage.focus();
+          return false;
+        }
+        //----------------
+        if(document.myform.dob.value=="")
+        {
+          alert("Please Provide Your Date Of Birth");
+          document.myform.dob.focus();
+          return false;
+        }
+        //----------------
+        if(document.myform.university.value=="")
+        {
+          alert("Please Provide Your University");
+          document.myform.university.focus();
+          return false;
+        }
+        //----------------
+        if(document.myform.contact.value=="")
+        {
+          alert("Please Provide Your Contact No");
+          document.myform.contact.focus();
+          return false;
+        }
+        else if(document.myform.contact.value!=phone)
+        {
+          alert("Please Provide only Digits in Your Contact No");
+          document.myform.contact.focus();
+          return false;
+        }
+        //----------------
+        if(document.myform.city.value=="")
+        {
+          alert("Please Provide Your City");
+          document.myform.city.focus();
+          return false;
+        }
+        //----------------
+        if(document.myform.state.value=="")
+        {
+          alert("Please Provide Your State");
+          document.myform.state.focus();
+          return false;
+        }
+        //----------------
+        if(document.myform.pincode.value=="")
+        {
+          alert("Please Provide Your Pincode");
+          document.myform.pincode.focus();
+          return false;
+        }
+        //----------------
+        if(document.myform.email.value=="")
+        {
+          alert("Please Provide Your Email");
+          document.myform.email.focus();
+          return false;
+        }
+        else if(document.myform.email.value!=eml)
+        {
+          alert("Please Provide Valid Email");
+          document.myform.email.focus();
+          return false;
+        }
+        //----------------
+
+        if(document.myform.pwd.value=="")
+        {
+          alert("Please Provide Your Password");
+          document.myform.pwd.focus();
+          return false;
+        }
+        else if(document.myform.pwd.value!=pas1)
+        {
+          alert("Password Must contain 1 alphabet 1 numeric value");
+          document.myform.pwd.focus();
+          return false;
+        }
+        //----------------
+        if(document.myform.confpwd.value=="")
+        {
+          alert("Confirm Password");
+          document.myform.confpwd.focus();
+          return false;
+        }
+        if(pas!=confpas)
+        {
+          alert("Password and Confirm Password Donot Match");
+          document.myform.confpwd.focus();
+          return false;
+        }
+        //----------------
+        if(document.myform.source.value=="")
+        {
+          alert("Please Provide Your Source");
+          document.myform.source.focus();
+          return false;
+        }
+        //----------------
+        if(document.myform.destn.value=="")
+        {
+          alert("Please Provide Your Destination");
+          document.myform.destn.focus();
+          return false;
+        }
+        //----------------
+        if(document.myform.trdate.value=="")
+        {
+          alert("Please Provide Your Travel Date");
+          document.myform.trdate.focus();
+          return false;
+        }
+        //----------------
+        if(document.myform.rtdate.value=="")
+        {
+          alert("Please Provide Your Return Date");
+          document.myform.rtdate.focus();
+          return false;
+        }
+        //----------------
+        if(document.myform.class.value=="")
+        {
+          alert("Please Provide Your Class");
+          document.myform.class.focus();
+          return false;
+        }        
+    }
+
+</script>
+<div class="container"  >
+  <form  method="post" name="myform" onsubmit="myval();">
+
+    <div class="row">
+      <div class="col-25">
+        <label for="fname">First Name</label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="fname" name="firstname" placeholder="Your name..">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label for="lname">Last Name</label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label for="quali">Qualification</label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="quali" name="qualification" placeholder="Your qualification..">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label for="per">Percentage</label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="per" name="percentage" placeholder="Your percentage..">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label for="dob">DateOfBirth </label>
+      </div>
+      <div class="col-75">
+        <input type="date" id="dob" name="dob" placeholder="Your Birth Date(dd/mm/yyyy)..">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label for="univ">Institute</label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="univ" name="university" placeholder="Your University/Educational institute name..">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label for="contact">Contact No</label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="contact" name="contact" placeholder="Your Contact Number..">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label for="city">City</label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="city" name="city" placeholder="Your city..">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label for="state">State</label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="state" name="state" placeholder="Your state..">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label for="pincode">Pin-Code</label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="pincode" name="pincode" placeholder="Your pincode..">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label for="email">Email Address</label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="email" name="email" placeholder="Your email address ..">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label for="pwd">Password</label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="pwd" name="pwd" placeholder="Your password..">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label for="confpwd">Confirm Password</label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="confpwd" name="confpwd" placeholder="Confirm Password..">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label for="source">Source</label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="source" name="source" placeholder="From Source..">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label for="destn">Destination</label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="destn" name="destn" placeholder="To destination..">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label for="trdate">Travel Date</label>
+      </div>
+      <div class="col-75">
+        <input type="date" id="trdate" name="trdate" placeholder="Travelling date..">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label for="rtdate">Return Date</label>
+      </div>
+      <div class="col-75">
+        <input type="date" id="rtdate" name="rtdate" placeholder="Returning Date..">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label for="class">Class</label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="class" name="class" placeholder="Economy/Premium/Business..">
+      </div>
+    </div>
+    <!-- <div class="row">
+      <div class="col-25">
+        <label for="country">Country</label>
+      </div>
+      <div class="col-75">
+        <select id="country" name="country">
+          <option value="australia">Australia</option>
+          <option value="canada">Canada</option>
+          <option value="usa">USA</option>
+        </select>
+      </div>
+    </div> -->
+    <!-- <div class="row">
+      <div class="col-25">
+        <label for="subject">Subject</label>
+      </div>
+      <div class="col-75">
+        <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+      </div>
+    </div> -->
+    <div class="row">
+      <input type="submit" value="Submit"  >
+    </div>
+  </form>
+</div>
+
+</body>
+</html>

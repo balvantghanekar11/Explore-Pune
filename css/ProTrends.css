@@ -1,0 +1,135 @@
+body
+{
+	padding: 0;
+	margin: 0;
+	background-color: #f4f4f4;
+	background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url('../img/mm.jpg');
+	/*background-image: url('../img/mm.jpg');*/
+	background-size: cover;
+	background-attachment: fixed;
+	background-position: bottom;
+}
+
+.slider{
+	height: 600px;
+}
+
+.section{
+	text-align: center;
+	padding: 50px 80px;
+}
+
+.section-light{
+	background-color: #f4f4f4;
+	color: #666;
+}
+
+.section-dark{
+	background-color: #282e34;
+	color: #ddd;
+}
+
+img{
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	position: absolute;
+}
+.img2{
+	background-image: url("../img/metro16.jpg");
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	width: 1500px;
+	position: relative;
+	height: 500px;
+	background-position: center;
+	background-size: cover;
+
+
+}
+.mySlides{
+	height: 600px;width: 95%;
+	margin-left: 40px;
+	margin-top: 50px;
+	box-shadow: 0px 10px 18px black;
+}
+.images{
+	margin-top: 100px;
+	width: 90%;
+	margin-left: 135px;
+}
+.image1,.image2,.image3,.image4,.image5,.image6,.image7,.image8{
+	height: 250px;
+	width: 250px;
+	padding: 20px;
+	margin: 10px;
+	display: inline-block;
+	box-shadow: 0px 10px 18px black;
+	background-position: center;
+}
+.image1:hover,.image2:hover,.image3:hover,.image4:hover,.image5:hover,.image6:hover,.image7:hover,.image8:hover{
+opacity: 0.8;
+  filter: alpha(opacity=50);
+}
+.image1{
+	background-image: url("../img/metro11.jpeg");
+	background-size: cover;
+}
+
+.image2{
+	background-image: url("../img/metro21.jpg");
+	background-size: cover;
+}
+
+.image3{
+	background-image: url("../img/metro13.jpeg");
+	background-size: cover;
+}
+.image4{
+	background-image: url("../img/metro14.jpg");
+	background-size: cover;
+}
+.image5{
+	background-image: url("../img/metro15.jpeg");
+	background-size: cover;
+}
+.image6{
+	background-image: url("../img/metro16.jpg");
+	background-size: cover;
+}
+.image7{
+	background-image: url("../img/metro20.jpg");
+	background-size: cover;
+}
+.image8{
+	background-image: url("../img/metro19.jpeg");
+	background-size: cover;
+}
+.videos{
+	margin-left: 350px;
+	
+}
+.Allvideos{
+	margin-left: 200px;
+	margin-top: 100px;
+}
+
+.logo{
+	height: 220px;
+	width: 250px;
+	margin-left: -650px;
+	margin-top: -60px;
+		box-shadow: 0px 10px 18px black;
+}
+
+hr{
+	width: 250px;
+}
+h1,h2,h3{
+	color: white;
+}
+.head h1
+{
+	text-align: center;
+	font-size:50px;
+	text-shadow: 1px 1px 2px red, 0 0 25px blue, 0 0 5px darkblue;
+}

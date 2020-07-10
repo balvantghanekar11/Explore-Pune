@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="css/ProForm.css">
+<link rel="stylesheet" type="text/css" href="css/ProHeader.css">
+<script type="text/javascript" src="js/form.js"></script>
+<script type="text/javascript">
+      function EmailCheck(EmailID) 
+{
+ /* var xhttp = new XMLHttpRequest();
+  var Url = "AjaxNewsletter.php?EID="+EmailID;
+  //alert(Url);
+  xhttp.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+     document.getElementById("lblNewsletter").innerHTML = this.responseText;
+    }
+  }; 
+  xhttp.open("GET", Url, true);
+  xhttp.send();*/
+  alert("hello");
+}
+  </script>
+</head>
+<body>
+  <div class="Menu">
+  <a href="Index.html">Home</a>
+  <a href="ProTouristSpots.html">Tourist Spots</a>
+  <a href="ProEducational.php">Educational Institutes</a>
+  <a href="ProCommerce.html">Commercial Zones</a>
+  <a href="ProTrends.html">Trends And Development</a>
+  <a href="ProFoodCorner.html">Food Corners</a>
+  <a href="ProResidential.html">Residential Areas</a>
+</div>
+
+<h1><center>Enter The Details</center></h1>
+<p><center>Please Enter Your Details And Let Us Help You With What You Are Looking For..</center></p>
+
+<div class="container"  >
+  <form action="" onsubmit="return validate();" method="post" name="myform">
+
+    <div class="row">
+      <div class="col-25">
+        <label for="fname">First Name</label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="fname" name="firstname" placeholder="Your name..">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label for="lname">Last Name</label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label for="quali">Qualification</label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="quali" name="qualification" placeholder="Your qualification..">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label for="per">Percentage</label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="per" name="percentage" placeholder="Your percentage..">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label for="dob">DateOfBirth </label>
+      </div>
+      <div class="col-75">
+        <input type="date" id="dob" name="dob" placeholder="Your Birth Date(dd/mm/yyyy)..">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label for="univ">Institute</label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="univ" name="university" placeholder="Your University/Educational institute name..">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label for="contact">Contact No</label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="contact" name="contact" placeholder="Your Contact Number..">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label for="city">City</label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="city" name="city" placeholder="Your city..">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label for="state">State</label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="state" name="state" placeholder="Your state..">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label for="pincode">Pin-Code</label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="pincode" name="pincode" placeholder="Your pincode..">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label for="email">Email Address</label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="email" name="email" placeholder="Your email address .." onblur = "EmailCheck(this.value);>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label for="pwd">Password</label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="pwd" name="pwd" placeholder="Your password..">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label for="confpwd">Confirm Password</label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="confpwd" name="confpwd" placeholder="Confirm Password..">
+      </div>
+    </div>
+    
+    <div class="row">
+      <input type="submit" value="Submit">
+    </div>
+  </form>
+</div>
+
+</body>
+</html>
